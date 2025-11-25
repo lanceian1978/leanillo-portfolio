@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "Portfolio website of Lance Ian T. Leanillo, Computer Science student at Central Philippine University specializing in software development",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
