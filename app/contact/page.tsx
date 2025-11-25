@@ -71,7 +71,7 @@ export default function ContactPage() {
           >
             Send Message
           </button>
-          <p className="text-xs text-slate-400">This demo form illustrates my preferred UX patterns.</p>
+          <p className="text-xs text-slate-400">Practice</p>
         </form>
       </section>
 
