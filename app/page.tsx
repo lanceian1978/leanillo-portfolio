@@ -198,12 +198,12 @@ export default function Home() {
                     />
                   </div>
                   <div className="relative flex flex-col gap-4">
-                    <h3 className="text-xl font-semibold text-slate-900">{service.title}</h3>
-                    <p className="text-sm text-slate-600">{service.description}</p>
-                    <ul className="space-y-2 text-sm text-slate-600">
+                    <h3 className="text-xl font-semibold text-white">{service.title}</h3>
+                    <p className="text-sm text-slate-200">{service.description}</p>
+                    <ul className="space-y-2 text-sm text-slate-200">
                       {service.bullets.map((bullet) => (
                         <li key={bullet} className="flex gap-2">
-                          <span className="mt-1 h-1.5 w-1.5 rounded-full bg-slate-900" />
+                          <span className="mt-1 h-1.5 w-1.5 rounded-full bg-white/80" />
                           <span>{bullet}</span>
                         </li>
                       ))}
@@ -248,7 +248,7 @@ export default function Home() {
                     href={project.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-slate-200 transition hover:text-sky-300"
+                    className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-white underline underline-offset-4 transition hover:text-sky-300"
                   >
                     View detailed build notes <IconArrow />
                   </a>
