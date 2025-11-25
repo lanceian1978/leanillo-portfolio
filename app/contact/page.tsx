@@ -69,3 +69,27 @@ export default function ContactPage() {
           <p className="text-xs text-slate-500">This demo form illustrates my preferred UX patterns.</p>
         </form>
       </section>
+
+      <section className="rounded-3xl border border-white/15 bg-white/90 p-6 shadow-2xl shadow-slate-200/60 backdrop-blur">
+        <h2 className="text-2xl font-semibold text-slate-900">Direct Channels</h2>
+        <div className="mt-4 space-y-4">
+          {contactLinks.map((contact) => (
+            <a
+              key={contact.label}
+              href={contact.href}
+              className="flex items-center justify-between rounded-2xl border border-slate-200/70 bg-white/90 px-5 py-4 text-slate-700 transition hover:-translate-y-1 hover:border-slate-900"
+            >
+              <div>
+                <p className="text-xs uppercase tracking-[0.4em] text-slate-500">{contact.label}</p>
+                <p className="text-lg font-semibold">{contact.value}</p>
+              </div>
+              <span className="text-sm font-semibold text-slate-500">Reach out</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+
