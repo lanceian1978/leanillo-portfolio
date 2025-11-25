@@ -342,8 +342,8 @@ export default function Home() {
       </main>
 
         <footer className="flex flex-col gap-4 pb-10 text-center text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Lance Ian T. Leanillo · Crafted with Next.js 16 in Iloilo City.</p>
-          <p>Let’s push ideas forward — robotics, education, software craftsmanship.</p>
+          <p>© {new Date().getFullYear()} Lance Ian T. Leanillo · CPU Student</p>
+          <p>Always learning, building, and exploring new technologies, let’s create something amazing together.</p>
         </footer>
       </div>
     </div>
