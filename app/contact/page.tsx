@@ -17,3 +17,55 @@ export default function ContactPage() {
             through any of the channels below and I’ll respond within 24 hours.
           </p>
         </header>
+
+        <section className="rounded-3xl border border-white/15 bg-white/95 p-6 shadow-2xl shadow-slate-200/60 backdrop-blur">
+        <form className="space-y-5">
+          <div className="space-y-2">
+            <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+              Full Name
+            </label>
+            <input
+              type="text"
+              placeholder="Your name"
+              className="w-full rounded-2xl border border-slate-200/70 bg-transparent px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-900"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+              Email Address
+            </label>
+            <input
+              type="email"
+              placeholder="you@email.com"
+              className="w-full rounded-2xl border border-slate-200/70 bg-transparent px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-900"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+              Contact Number
+            </label>
+            <input
+              type="tel"
+              placeholder="+63 976 150 6616"
+              className="w-full rounded-2xl border border-slate-200/70 bg-transparent px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-900"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+              What should we build?
+            </label>
+            <textarea
+              rows={4}
+              placeholder="Tell me about the experience, system, or collaboration you have in mind."
+              className="w-full rounded-2xl border border-slate-200/70 bg-transparent px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-900"
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-full rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-900 px-4 py-3 text-sm font-semibold uppercase tracking-[0.4em] text-white transition hover:scale-[1.01]"
+          >
+            Send Message
+          </button>
+          <p className="text-xs text-slate-500">This demo form illustrates my preferred UX patterns.</p>
+        </form>
+      </section>
